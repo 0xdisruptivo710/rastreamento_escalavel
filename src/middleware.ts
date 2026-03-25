@@ -1,8 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
-export const runtime = 'edge'
-
 const PUBLIC_ROUTES = ['/login', '/auth/callback', '/auth/accept-invite']
 
 export async function middleware(request: NextRequest) {
